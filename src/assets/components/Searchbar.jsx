@@ -46,9 +46,18 @@ export default function Searchbar() {
     position: "absolute",
     right: "20px",
   };
+
+  const inputStyle = {
+    width: "85%",
+    outline: "none",
+    border: "none",
+    height: "43px",
+    backgroundColor: "#EFECEC",
+  };
+
   return (
     <div style={searchBarStyle}>
-      {" "}
+      <input type="text" style={inputStyle} />
       <MdOutlineSearch style={searchIconStyle} />
       <BiSolidMicrophone style={microphoneStyle} />
       <SiGooglelens style={lensStyle} />
